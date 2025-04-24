@@ -14,4 +14,6 @@
 ## 如何啟動
 ```bash
 php artisan serve
+http://127.0.0.1:8001/html/BarLocator.html
+前端啟動
 npm run dev
