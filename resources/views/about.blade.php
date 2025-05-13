@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>About</h1>
+<h1>{{$pageName}}</h1>
 
 @endsection
 
