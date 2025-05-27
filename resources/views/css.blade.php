@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url(/images/bg.png);
+    background-image: url(assets/images/bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,6 +18,7 @@ header {
     background: var(--header-w);
     display: flex;
     justify-content: center;
+    padding: 10px 0;
 }
 .logo {
     padding: 0.8rem;
