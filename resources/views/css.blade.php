@@ -19,10 +19,18 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    align-items: center;
+    position: relative;
 }
 .logo {
     padding: 0.8rem;
     display: flex;
+}
+.language {
+    position: absolute;
+    right: 0rem;
+    transform: translateX(-50%);
+    padding-right: 40px;
 }
 
 </style>
