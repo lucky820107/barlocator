@@ -32,5 +32,10 @@ header {
     transform: translateX(-50%);
     padding-right: 40px;
 }
+.main-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
 
 </style>
