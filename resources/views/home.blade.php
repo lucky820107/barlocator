@@ -48,9 +48,10 @@
                 </label>
             </div>
 
-            <div>
+            <div class="search-button">
                 <button>
-                    <img src="{{ asset('assets/images/Vector.png') }}" alt="">
+                    <img src="{{ asset('assets/images/Vector.png') }}" alt="search">
+                    <span>搜尋</span>
                 </button>
             </div>
         </form>

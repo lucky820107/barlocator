@@ -48,19 +48,23 @@ header {
     border-radius: 6px;
     box-shadow: 0 2px 8px rgb(0 0 0 / 36%);
 }
-
 .checkbox-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px 20px;
     padding: 20px;
 }
-
 .checkbox-grid label {
     display: flex;
     align-items: center;
     gap: 8px;
     font-size: 14px;
 }
-
+.search-button {
+    display: flex;
+    justify-content: center;
+}
+.search-button button {
+    padding: 5px 15px;
+}
 </style>
