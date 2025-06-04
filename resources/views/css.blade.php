@@ -3,6 +3,7 @@
 :root {
     --header-w: #ffff;
     --button: #e0e0e0;
+    --footer-bg: #EAEAEA;
 }
 body {
     box-sizing: border-box;
@@ -87,5 +88,60 @@ header {
 }
 .search-button button:hover .search-icon {
     content: url('/assets/images/Vector-h.svg');
+}
+
+/* ---------- Footer Container ---------- */
+.site-footer {
+    background-color: #f2f2f2;  
+    padding: 30px 0;
+    text-align: center;          
+    font-family: 'Microsoft JhengHei', sans-serif;
+    font-size: 14px;
+    color: #555;
+    margin-top: 2rem;                 
+}
+
+/* ---------- 連結列 ---------- */
+.footer-links {
+    display: flex;
+    justify-content: center;     
+    flex-wrap: wrap;             
+    gap: 30px;                    
+    margin-bottom: 16px;         
+}
+
+.footer-links a {
+    color: #555;                 
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #000;                
+}
+
+/* ---------- 聯絡方式列 ---------- */
+.footer-contact {
+    display: flex;
+    justify-content: center;    
+    align-items: center;         
+    gap: 8px;                    
+    margin-top: 8px;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.footer-email {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-email:hover {
+    color: #000;
 }
 </style>

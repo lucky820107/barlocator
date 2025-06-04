@@ -11,5 +11,7 @@
     @include("part.header")
 
     @yield('content')
+
+    @include("part.footer")
 </body>
 </html>
