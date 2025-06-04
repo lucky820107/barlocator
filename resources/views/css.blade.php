@@ -2,6 +2,7 @@
 <style>
 :root {
     --header-w: #ffff;
+    --button: #e0e0e0;
 }
 body {
     box-sizing: border-box;
@@ -38,7 +39,7 @@ header {
     padding-top: 50px;
 }
 .form-box {
-    padding-top: 20px;
+    padding-top: 4rem;
 }
 .checkbox-form {
     max-width: 800px;
@@ -63,8 +64,28 @@ header {
 .search-button {
     display: flex;
     justify-content: center;
+    padding: 2rem 0;
 }
 .search-button button {
-    padding: 5px 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--button); 
+    color: #000;              
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;       
+    box-shadow: 3px 3px 0 #666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.search-button button:hover {
+    background-color: #000;      
+    color: gold;                 
+    box-shadow: 4px 4px 6px #444;
+}
+.search-button button:hover .search-icon {
+    content: url('/assets/images/Vector-h.svg');
 }
 </style>

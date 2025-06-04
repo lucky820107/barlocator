@@ -50,7 +50,7 @@
 
             <div class="search-button">
                 <button>
-                    <img src="{{ asset('assets/images/Vector.png') }}" alt="search">
+                    <img src="{{ asset('assets/images/Vector.svg') }}" alt="search" class="search-icon">
                     <span>搜尋</span>
                 </button>
             </div>
