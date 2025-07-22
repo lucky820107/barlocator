@@ -27,4 +27,14 @@ class HomeController extends Controller
 
         return view('about', $data);
     }
+
+    public function map(){
+
+        $data=[
+            "pageTitle" => "map | ".config('website.siteName'),
+            "pageName" => "map"
+        ];
+
+        return view('map', $data);
+    }
 }
