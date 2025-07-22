@@ -71,61 +71,67 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: var(--button); 
-    color: #000;              
+    background-color: var(--button);
+    color: #000;
     font-size: 18px;
     padding: 10px 20px;
     border: none;
-    border-radius: 8px;       
+    border-radius: 8px;
     box-shadow: 3px 3px 0 #666;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 .search-button button:hover {
-    background-color: #000;      
-    color: gold;                 
+    background-color: #000;
+    color: gold;
     box-shadow: 4px 4px 6px #444;
 }
 .search-button button:hover .search-icon {
     content: url('/assets/images/Vector-h.svg');
 }
 
+/* ---------- map ---------- */
+.mapbax {
+    display: flex;
+    justify-content: center;
+}
+
 /* ---------- Footer Container ---------- */
 .site-footer {
-    background-color: #f2f2f2;  
+    background-color: #f2f2f2;
     padding: 30px 0;
-    text-align: center;          
+    text-align: center;
     font-family: 'Microsoft JhengHei', sans-serif;
     font-size: 14px;
     color: #555;
-    margin-top: 2rem;                 
+    margin-top: 2rem;
 }
 
 /* ---------- 連結列 ---------- */
 .footer-links {
     display: flex;
-    justify-content: center;     
-    flex-wrap: wrap;             
-    gap: 30px;                    
-    margin-bottom: 16px;         
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 16px;
 }
 
 .footer-links a {
-    color: #555;                 
+    color: #555;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-    color: #000;                
+    color: #000;
 }
 
 /* ---------- 聯絡方式列 ---------- */
 .footer-contact {
     display: flex;
-    justify-content: center;    
-    align-items: center;         
-    gap: 8px;                    
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     margin-top: 8px;
 }
 
