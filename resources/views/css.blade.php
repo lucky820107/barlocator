@@ -149,9 +149,79 @@ header {
     font-size: 14px;
 }
 
+/* 幻燈片 */
 .brief-box {
-    padding: 20px
+    padding: 20px 20px 0px 20px;
 }
+.slider-container {
+    position: relative;
+    width: 300px;
+    margin: 2rem auto;
+    overflow: visible;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    font-size: 24px;
+}
+
+/* 隱藏非 active */
+.slide:not(.active) {
+    display: none;
+}
+
+/* 按鈕 */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ddd;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+    top: 80px;
+}
+.next {
+    right: 10px;
+    top: 80px;
+}
+
+/* 分頁圓點 */
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+    display: inline-block;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
 
 /* ---------- Footer Container ---------- */
 .site-footer {

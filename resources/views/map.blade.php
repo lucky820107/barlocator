@@ -36,8 +36,62 @@
                 <p><strong>營業時間：</strong>PM5:00 - AM2:00</p>
                 <p><strong>店休日：</strong>一 二</p>
             </div>
+            <div class="slider-container">
+                <div class="slides">
+                  <div class="slide active">Slide 1</div>
+                  <div class="slide">Slide 2</div>
+                  <div class="slide">Slide 3</div>
+                </div>
 
+                <!-- 左右按鈕 -->
+                <button class="prev">&#8592;</button>
+                <button class="next">&#8594;</button>
+
+                <!-- 分頁圓點 -->
+                <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                </div>
+            </div>
         </div>
     </div>
 </main>
+<script>
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        dots[i].classList.toggle('active', i === index);
+        // console.log(dots);
+      });
+      current = index;
+    }
+
+    document.querySelector('.prev').addEventListener('click', () => {
+      const index = (current - 1 + slides.length) % slides.length;
+      showSlide(index);
+    });
+
+    document.querySelector('.next').addEventListener('click', () => {
+      const index = (current + 1) % slides.length;
+      showSlide(index);
+    });
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const index = parseInt(dot.dataset.index);
+        showSlide(index);
+      });
+    });
+
+    // 可選：自動播放
+    // setInterval(() => {
+    //   const index = (current + 1) % slides.length;
+    //   showSlide(index);
+    // }, 3000);
+  </script>
 @endsection
