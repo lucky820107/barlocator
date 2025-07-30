@@ -91,9 +91,51 @@ header {
 }
 
 /* ---------- map ---------- */
+
 .mapbax {
     display: flex;
     justify-content: center;
+}
+.information {
+    background: #fff;
+}
+.information-box {
+    display: flex;
+    justify-content: space-around;
+}
+.logo-icon {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-icon img {
+    width: 30px;
+    height: 30px;
+}
+.store {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+/* -------- tag -------- */
+.tags {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+}
+.tag {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 14px;
+}
+
+.brief-box {
+    padding: 20px
 }
 
 /* ---------- Footer Container ---------- */
