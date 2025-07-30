@@ -95,6 +95,20 @@ header {
 .mapbax {
     display: flex;
     justify-content: center;
+    padding-top: 50px;
+    gap: 30px;
+}
+.map-wrapper {
+    width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 .information {
     background: #fff;
@@ -169,6 +183,9 @@ header {
 }
 
 /* ---------- 聯絡方式列 ---------- */
+.site-footer {
+    min-height: 20vh;
+}
 .footer-contact {
     display: flex;
     justify-content: center;
