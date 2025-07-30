@@ -116,6 +116,7 @@ header {
 .information-box {
     display: flex;
     justify-content: space-around;
+    padding: 20px 0;
 }
 .logo-icon {
     width: 60px;
@@ -183,9 +184,6 @@ header {
 }
 
 /* ---------- 聯絡方式列 ---------- */
-.site-footer {
-    min-height: 20vh;
-}
 .footer-contact {
     display: flex;
     justify-content: center;
